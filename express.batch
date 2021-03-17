@@ -1,0 +1,5 @@
+contract deploy ./src/bin/Debug/net5.0/OracleSample.nef genesis
+checkpoint create ./checkpoints/contract-deployed -f
+oracle enable genesis
+contract invoke ./make-oracle-call.neo-invoke.json genesis
+checkpoint create ./checkpoints/contract-invoked -f

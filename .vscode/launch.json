@@ -8,7 +8,7 @@
             "name": "makeOracleCall",
             "type": "neo-contract",
             "request": "launch",
-            "program": "${workspaceFolder}/contract/bin/Debug/netstandard2.1/OracleSample.nef",
+            "program": "${workspaceFolder}/src/bin/Debug/net5.0/OracleSample.nef",
             "invocation": {
                 "operation": "makeOracleCall",
                 "args": []
@@ -19,16 +19,16 @@
             "name": "oracleCallback",
             "type": "neo-contract",
             "request": "launch",
-            "program": "${workspaceFolder}/contract/bin/Debug/netstandard2.1/OracleSample.nef",
+            "program": "${workspaceFolder}/src/bin/Debug/net5.0/OracleSample.nef",
             "invocation": {
-                "oracleResponse": {
+                "oracle-response": {
                     "url": "fake:somepath.json",
                     "callback": "oracleCallback",
                     "filter": "Actors[0]",
-                    "resultFile": "./response.json",
+                    "result-file": "${workspaceFolder}/response.json",
                 }
             },
-            "storage": []
+            "checkpoint": "${workspaceFolder}/checkpoints/contract-invoked.neoxp-checkpoint"
         }
     ]
 }

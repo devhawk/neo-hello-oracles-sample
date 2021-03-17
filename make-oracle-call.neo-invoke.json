@@ -1,5 +1,5 @@
 {
-    "contract": "./contract/bin/Debug/netstandard2.1/OracleSample.nef",
+    "contract": "DevHawk.OracleSample",
     "operation": "makeOracleCall",
     "args": []
 }

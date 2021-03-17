@@ -1,10 +1,15 @@
 ﻿using System;
+using System.ComponentModel;
 using Neo;
 using Neo.SmartContract.Framework;
 using Neo.SmartContract.Framework.Services.Neo;
 
 namespace DevHawk.Neo.Samples
 {
+    [DisplayName("DevHawk.OracleSample")]
+    [ManifestExtra("Author", "Harry Pierson")]
+    [ManifestExtra("Email", "harrypierson@hotmail.com")]
+    [ManifestExtra("Description", "This is an example contract")]
     public class OracleSample : SmartContract
     {
         public static void MakeOracleCall()
