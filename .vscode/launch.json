@@ -16,7 +16,7 @@
             "storage": []
         },
         {
-            "name": "oracleCallback",
+            "name": "oracleCallback (checkpoint)",
             "type": "neo-contract",
             "request": "launch",
             "program": "${workspaceFolder}/src/bin/Debug/net5.0/OracleSample.nef",
@@ -29,6 +29,20 @@
                 }
             },
             "checkpoint": "${workspaceFolder}/checkpoints/contract-invoked.neoxp-checkpoint"
+        },
+        {
+            "name": "oracleCallback (no checkpoint)",
+            "type": "neo-contract",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/bin/Debug/net5.0/OracleSample.nef",
+            "invocation": {
+                "oracle-response": {
+                    "url": "fake:somepath.json",
+                    "callback": "oracleCallback",
+                    "filter": "Actors[0]",
+                    "result-file": "${workspaceFolder}/response.json",
+                }
+            }
         }
     ]
 }
