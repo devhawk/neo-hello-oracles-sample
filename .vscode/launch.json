@@ -39,7 +39,7 @@
                 "oracle-response": {
                     "url": "fake:somepath.json",
                     "callback": "oracleCallback",
-                    "filter": "Actors[0]",
+                    "filter": "Actors[1]",
                     "result-file": "${workspaceFolder}/response.json",
                 }
             }
