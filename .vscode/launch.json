@@ -23,8 +23,7 @@
             "invocation": {
                 "oracle-response": {
                     "url": "fake:somepath.json",
-                    "callback": "oracleCallback",
-                    "filter": "Actors[0]",
+                    "callback": "-", // TODO: remove callback when https://github.com/neo-project/neo-debugger/issues/93 is resolved
                     "result-file": "${workspaceFolder}/response.json",
                 }
             },
